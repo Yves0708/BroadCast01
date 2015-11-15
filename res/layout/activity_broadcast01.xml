@@ -1,0 +1,44 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12sp"
+    android:background="@drawable/retangle_drawable"
+    android:stretchColumns="1" >
+
+    <TableRow>
+        <TextView
+            style="@style/table_style"
+            android:text="NAME:" />
+
+        <EditText
+            android:id="@+id/name_edit"
+            android:layout_span="2"
+            style="@style/table_style"
+            android:inputType="textEmailAddress" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            style="@style/table_style"
+            android:text="AGE:" />
+
+        <SeekBar
+	        android:id="@+id/age_seekbar"
+            android:max="100" />
+        
+        <TextView
+            android:id="@+id/age_text"
+            android:text="0"
+            style="@style/table_style" />
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            style="@style/table_style"
+            android:layout_span="3"
+            android:onClick="clickBroadcastButton"
+            android:text="BROADCAST" />
+    </TableRow>
+
+</TableLayout>
